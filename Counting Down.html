@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlocking the Future of Business | Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #0a192f;
+            color: #e6f1ff;
+            overflow-x: hidden;
+        }
+        .futuristic-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .encrypted-text {
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+        .tech-icon {
+            transition: all 0.5s ease;
+        }
+        .tech-icon:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.7));
+        }
+        .countdown-box {
+            perspective: 1000px;
+        }
+        .countdown-segment {
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+        }
+        .countdown-number {
+            backface-visibility: hidden;
+        }
+        .flip {
+            transform: rotateX(90deg);
+        }
+        .decryption-container {
+            background: linear-gradient(90deg, rgba(10,25,47,0.7) 0%, rgba(21,101,192,0.3) 50%, rgba(10,25,47,0.7) 100%);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(100, 255, 218, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(100, 255, 218, 0);
+            }
+        }
+        .data-flow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.1;
+            background-image: 
+                linear-gradient(to right, rgba(100, 255, 218, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(100, 255, 218, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: flow 60s linear infinite;
+        }
+        @keyframes flow {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 1000px 1000px;
+            }
+        }
+        .glow {
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
+        }
+        .btn-gradient {
+            background: linear-gradient(135deg, #64ffda 0%, #1a7cd9 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(26, 124, 217, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="data-flow"></div>
+    
+    <header class="py-6 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl futuristic-text text-teal-400">
+                <span class="glow">360°</span> Solutions
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold futuristic-text mb-6">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    Unlocking the Future of Business
+                </span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-12">
+                Your all-in-one platform for unparalleled tech support, strategic business growth, and seamless e-commerce is launching soon. 
+                <span class="text-teal-300 font-medium">Can you decode what's coming?</span>
+            </p>
+            
+            <div class="mb-16">
+                <div class="flex justify-center space-x-2 sm:space-x-4 mb-8">
+                    <div class="tech-icon">
+                        <div class="bg-gray-800 bg-opacity-50 p-4 rounded-full">
+                            <i class="fas fa-headset text-2xl text-teal-400"></i>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-300">Tech Support</p>
+                    </div>
+                    <div class="tech-icon">
+                        <div class="bg-gray-800 bg-opacity-50 p-4 rounded-full">
+                            <i class="fas fa-chart-line text-2xl text-teal-400"></i>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-300">Business Growth</p>
+                    </div>
+                    <div class="tech-icon">
+                        <div class="bg-gray-800 bg-opacity-50 p-4 rounded-full">
+                            <i class="fas fa-shopping-cart text-2xl text-teal-400"></i>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-300">E-Commerce</p>
+                    </div>
+                </div>
+                
+                <h2 class="text-2xl sm:text-3xl text-gray-200 mb-6 futuristic-text">
+                    The Solution is Encrypted. The Countdown Begins.
+                </h2>
+                
+                <div class="countdown-container mb-12">
+                    <div class="flex justify-center space-x-2 sm:space-x-4">
+                        <div class="countdown-box">
+                            <div class="bg-gray-800 bg-opacity-70 rounded-lg p-4 sm:p-6 text-center">
+                                <div class="text-3xl sm:text-5xl font-bold countdown-number futuristic-text text-teal-400" id="days">00</div>
+                                <div class="text-sm sm:text-base text-gray-300 mt-2">Days</div>
+                            </div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="bg-gray-800 bg-opacity-70 rounded-lg p-4 sm:p-6 text-center">
+                                <div class="text-3xl sm:text-5xl font-bold countdown-number futuristic-text text-teal-400" id="hours">00</div>
+                                <div class="text-sm sm:text-base text-gray-300 mt-2">Hours</div>
+                            </div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="bg-gray-800 bg-opacity-70 rounded-lg p-4 sm:p-6 text-center">
+                                <div class="text-3xl sm:text-5xl font-bold countdown-number futuristic-text text-teal-400" id="minutes">00</div>
+                                <div class="text-sm sm:text-base text-gray-300 mt-2">Minutes</div>
+                            </div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="bg-gray-800 bg-opacity-70 rounded-lg p-4 sm:p-6 text-center">
+                                <div class="text-3xl sm:text-5xl font-bold countdown-number futuristic-text text-teal-400" id="seconds">00</div>
+                                <div class="text-sm sm:text-base text-gray-300 mt-2">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="decryption-container rounded-lg p-6 sm:p-8 max-w-2xl mx-auto mb-12 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/20 to-transparent animate-pulse"></div>
+                    <div class="relative z-10">
+                        <div class="text-sm text-gray-400 mb-4">ENCRYPTED PLATFORM NAME</div>
+                        <div class="text-2xl sm:text-3xl md:text-4xl encrypted-text text-gray-200 mb-4" id="encrypted-text">
+                            <span class="animate-pulse">█</span>█<span class="animate-pulse" style="animation-delay: 0.2s">█</span>█<span class="animate-pulse" style="animation-delay: 0.4s">█</span> █<span class="animate-pulse" style="animation-delay: 0.6s">█</span>█<span class="animate-pulse" style="animation-delay: 0.8s">█</span>█<span class="animate-pulse" style="animation-delay: 1s">█</span> █<span class="animate-pulse" style="animation-delay: 1.2s">█</span>█<span class="animate-pulse" style="animation-delay: 1.4s">█</span>█
+                        </div>
+                        <div class="flex items-center justify-center space-x-2 text-teal-400">
+                            <i class="fas fa-lock"></i>
+                            <span class="text-sm">Decryption in progress...</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="max-w-md mx-auto mb-12">
+                    <p class="text-gray-300 mb-6">
+                        Enter your email to get exclusive launch updates and be among the first to witness the reveal.
+                    </p>
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Your business email" class="flex-grow px-4 py-3 rounded-lg bg-gray-800 bg-opacity-70 border border-gray-700 focus:border-teal-400 focus:outline-none text-white">
+                        <button type="submit" class="px-6 py-3 rounded-lg btn-gradient text-white font-semibold pulse">
+                            Notify Me
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="text-gray-400 max-w-3xl mx-auto mb-8">
+                    <p>
+                        We're meticulously crafting a comprehensive solution to empower your business with unparalleled tech support, strategic business development tools, and a robust e-commerce ecosystem. 
+                        <span class="text-teal-300">The key to unlocking your growth is on its way.</span>
+                    </p>
+                </div>
+                
+                <div class="text-xl sm:text-2xl font-bold text-teal-400 futuristic-text mb-12">
+                    Our Expertise - Your Business Growth
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-6 px-4 sm:px-6 lg:px-8 bg-gray-900 bg-opacity-50">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400 mb-4">
+                Follow us for more clues about the launch!
+            </p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+            </div>
+            <p class="text-sm text-gray-500">
+                © 2025 360° Solutions. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Set the date we're counting down to (33 days from now)
+        const countDownDate = new Date();
+        countDownDate.setDate(countDownDate.getDate() + 33);
+        countDownDate.setHours(countDownDate.getHours() + 12);
+        countDownDate.setMinutes(countDownDate.getMinutes() + 30);
+        countDownDate.setSeconds(countDownDate.getSeconds() + 45);
+
+        // Update the count down every 1 second
+        const x = setInterval(function() {
+            // Get today's date and time
+            const now = new Date().getTime();
+            
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result
+            updateCountdown('days', days);
+            updateCountdown('hours', hours);
+            updateCountdown('minutes', minutes);
+            updateCountdown('seconds', seconds);
+            
+            // If the count down is finished, trigger decryption
+            if (distance < 0) {
+                clearInterval(x);
+                triggerDecryption();
+            }
+        }, 1000);
+
+        function updateCountdown(elementId, newValue) {
+            const element = document.getElementById(elementId);
+            const oldValue = parseInt(element.textContent);
+            
+            if (newValue !== oldValue) {
+                // Add animation class
+                const box = element.parentElement.parentElement;
+                box.classList.add('flip');
+                
+                // Update value after animation
+                setTimeout(() => {
+                    element.textContent = newValue < 10 ? '0' + newValue : newValue;
+                    box.classList.remove('flip');
+                    
+                    // Add glow effect
+                    element.classList.add('glow');
+                    setTimeout(() => {
+                        element.classList.remove('glow');
+                    }, 500);
+                }, 250);
+            }
+        }
+
+        function triggerDecryption() {
+            const encryptedText = document.getElementById('encrypted-text');
+            const lockIcon = document.querySelector('.fa-lock');
+            const notifyBtn = document.querySelector('.pulse');
+            
+            // Change lock to unlock icon
+            lockIcon.classList.remove('fa-lock');
+            lockIcon.classList.add('fa-unlock');
+            
+            // Update the text
+            encryptedText.innerHTML = '<span class="text-teal-400">360° Nexus</span>';
+            
+            // Update the status text
+            document.querySelector('.fa-unlock').nextElementSibling.textContent = 'Decryption complete!';
+            
+            // Update the button
+            notifyBtn.classList.remove('pulse');
+            notifyBtn.textContent = 'Discover More';
+            notifyBtn.classList.add('animate-bounce');
+            
+            // Add celebration effect
+            const decryptionContainer = document.querySelector('.decryption-container');
+            decryptionContainer.classList.add('bg-gradient-to-r', 'from-blue-900/30', 'to-teal-900/30');
+            
+            // Create confetti effect
+            for (let i = 0; i < 50; i++) {
+                createConfetti();
+            }
+        }
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.backgroundColor = `hsl(${Math.random() * 60 + 160}, 100%, 70%)`;
+            confetti.style.width = Math.random() * 10 + 5 + 'px';
+            confetti.style.height = Math.random() * 10 + 5 + 'px';
+            confetti.style.position = 'fixed';
+            confetti.style.top = '-10px';
+            confetti.style.zIndex = '9999';
+            confetti.style.borderRadius = '50%';
+            document.body.appendChild(confetti);
+            
+            const animation = confetti.animate([
+                { top: '-10px', transform: 'rotate(0deg)', opacity: 1 },
+                { top: '100vh', transform: 'rotate(360deg)', opacity: 0 }
+            ], {
+                duration: Math.random() * 3000 + 2000,
+                easing: 'cubic-bezier(0.1, 0.8, 0.9, 1)'
+            });
+            
+            animation.onfinish = () => confetti.remove();
+        }
+
+        // Background animation intensity increases as countdown progresses
+        function updateBackgroundIntensity() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const totalDuration = countDownDate - new Date();
+            const progress = 1 - (distance / totalDuration);
+            
+            const dataFlow = document.querySelector('.data-flow');
+            const newOpacity = 0.1 + (progress * 0.2);
+            dataFlow.style.opacity = newOpacity;
+            
+            if (distance > 0) {
+                requestAnimationFrame(updateBackgroundIntensity);
+            }
+        }
+        
+        // Start background intensity updates
+        updateBackgroundIntensity();
+    </script>
+</body>
+</html>
